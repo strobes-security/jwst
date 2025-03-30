@@ -32,7 +32,7 @@ class JWST:
     
     SUPPORTED_EXTENSIONS = ['.png', '.jpg', '.jpeg', '.webp']
     
-    def __init__(self, api_key: Optional[str] = None, model: str = "gpt-4-vision-preview"):
+    def __init__(self, api_key: Optional[str] = None, model: str = "gpt-4o-mini"):
         """Initialize the JWST class.
         
         Args:
@@ -218,8 +218,8 @@ def main():
     parser.add_argument("--format", "-f", choices=["json", "table"], default="json",
                         help="Output format (json or table, defaults to json)")
     parser.add_argument("--api-key", help="OpenAI API key (defaults to OPENAI_API_KEY environment variable)")
-    parser.add_argument("--model", default="gpt-4-vision-preview", 
-                       help="OpenAI model to use (defaults to gpt-4-vision-preview)")
+    parser.add_argument("--model", default="gpt-4o-mini", 
+                       help="OpenAI model to use (defaults to gpt-4o-mini)")
     parser.add_argument("--workers", type=int, default=4,
                        help="Maximum number of parallel workers (defaults to 4)")
     
