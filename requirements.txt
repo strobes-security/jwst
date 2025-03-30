@@ -1,0 +1,4 @@
+openai>=1.0.0         # OpenAI API client for Vision capabilities
+requests>=2.25.0      # HTTP requests library
+tqdm>=4.60.0          # Progress bars for batch processing
+rich>=10.0.0          # Rich text formatting and tables in terminal
